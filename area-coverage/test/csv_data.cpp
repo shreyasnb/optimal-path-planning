@@ -4,8 +4,10 @@
 #include <utility>
 #include <fstream>
 #include <sstream>
+#include <chrono>  // Include the chrono library
 
 using namespace std;
+using namespace std::chrono;  // For easier usage of chrono
 
 // Function to calculate the distance between two points
 double distance(pair<double, double> p1, pair<double, double> p2) {
@@ -60,6 +62,10 @@ vector<pair<double, double>> read_coordinates_from_csv(const string& filename) {
 
 int main() {
     string filename = "data.csv";  // Replace with your CSV file path
+
+    // Start timing
+    auto start = high_resolution_clock::now();
+
     vector<pair<double, double>> vertices = read_coordinates_from_csv(filename);
 
     // Display the vertices
@@ -80,6 +86,13 @@ int main() {
     } catch (const exception &e) {
         cerr << e.what() << endl;
     }
+
+    // End timing
+    auto end = high_resolution_clock::now();
+
+    // Calculate the duration
+    auto duration = duration_cast<milliseconds>(end - start);
+    cout << "Time taken by the program: " << duration.count() << " milliseconds" << endl;
 
     return 0;
 }
