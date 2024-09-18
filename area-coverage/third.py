@@ -4,7 +4,7 @@ from scipy.spatial import ConvexHull
 from matplotlib.path import Path
 
 # Load the points from the CSV file
-points = np.genfromtxt('data.csv', delimiter=',')
+points = np.genfromtxt('pacman.csv', delimiter=',')
 
 # Calculate the convex hull of the points
 hull = ConvexHull(points)
