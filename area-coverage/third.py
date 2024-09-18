@@ -67,6 +67,7 @@ def ensure_10_sided_polygon(polygon_points, num_sides=10):
         reduced_points = [polygon_points[int(i * step) % current_sides] for i in range(num_sides)]
         return np.array(reduced_points)
 
+
 # Reduce the hull to a 10-sided polygon
 polygon_points = reduce_to_polygon(hull_points, 10)
 
