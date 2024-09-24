@@ -43,4 +43,4 @@ Enter the second diagonal coordinate of the rectangle (x2 y2): 20 10
 Enter the radius of the circles: 1
 ```
 # Output
-![Alt text](circle-fitting/Figure_1.png)
+![Alt text](Figure_1.png)
