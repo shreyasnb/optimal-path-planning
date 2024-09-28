@@ -1,6 +1,6 @@
 # Circle Fitting Algorithm in a Rectangle
 
-This project implements a Python script to calculate the centers of circles packed inside a rectangle, given the rectangle's diagonal coordinates and the radius of the circles. The circles are plotted using `matplotlib`, and the algorithm ensures that the circles fit inside the rectangle.
+This module implements a Python script to calculate the centers of circles packed inside a rectangle, given the rectangle's diagonal coordinates and the radius of the circles. The circles are plotted using `matplotlib`, and the algorithm ensures that the circles fit inside the rectangle.
 
 ## Table of Contents
 - [Overview](#overview)
